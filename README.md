@@ -1,11 +1,11 @@
 <!--
  * @Date: 2022-03-14 15:56:09
  * @LastEditors: Fullsize
- * @LastEditTime: 2022-03-14 16:21:42
- * @FilePath: /vite-react/README.md
+ * @LastEditTime: 2022-03-21 16:56:34
+ * @FilePath: /mobile-supermarket/README.md
  * @Author: Fullsize
 -->
-# 基于vite封装框架
+# mobile 超市
 
 ## 使用
 ```
