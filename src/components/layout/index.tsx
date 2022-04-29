@@ -1,25 +1,30 @@
 /*
  * @Date: 2022-03-21 16:22:27
  * @LastEditors: Fullsize
- * @LastEditTime: 2022-04-29 16:22:57
+ * @LastEditTime: 2022-04-29 16:39:24
  * @FilePath: /mobile-supermarket/src/components/layout/index.tsx
  * @Author: Fullsize
  */
 import React, { useEffect, useState } from "react";
-import { Badge, TabBar } from 'antd-mobile';
+import { TabBar } from 'antd-mobile';
 import {
   AppOutline,
   MessageOutline,
   MessageFill,
-  UnorderedListOutline,
   UserOutline,
   ShopbagOutline,
 } from 'antd-mobile-icons';
+import { useNavigate } from 'react-router-dom';
 import styles from './index.module.css';
-
+const toUrl: any = {
+  'home': '/',
+  'message': '/message',
+  'personalCenter': '/',
+  'shopping':'/shopping'
+}
 const Layout: React.FC = (props) => {
   const [state, setState] = useState('home');
-
+  const navigate = useNavigate();
   const tabs = [
     {
       key: 'home',
@@ -34,7 +39,7 @@ const Layout: React.FC = (props) => {
         active ? <MessageFill /> : <MessageOutline />,
     },
     {
-      key: 'todo',
+      key: 'shopping',
       title: '购物袋',
       icon: <ShopbagOutline />,
     },
@@ -44,9 +49,9 @@ const Layout: React.FC = (props) => {
       icon: <UserOutline />,
     },
   ]
-  useEffect(()=>{
-    console.log(state)
-  },[state])
+  useEffect(() => {
+    navigate(toUrl[state] ?? '/')
+  }, [state])
   return (
     <div className={styles['constainer']}>
       <div className={styles['content']}>
