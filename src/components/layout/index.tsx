@@ -1,7 +1,7 @@
 /*
  * @Date: 2022-03-21 16:22:27
  * @LastEditors: Fullsize
- * @LastEditTime: 2022-04-29 16:39:24
+ * @LastEditTime: 2022-04-29 16:51:30
  * @FilePath: /mobile-supermarket/src/components/layout/index.tsx
  * @Author: Fullsize
  */
@@ -14,13 +14,13 @@ import {
   UserOutline,
   ShopbagOutline,
 } from 'antd-mobile-icons';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import styles from './index.module.css';
 const toUrl: any = {
   'home': '/',
   'message': '/message',
   'personalCenter': '/',
-  'shopping':'/shopping'
+  'shopping': '/shopping'
 }
 const Layout: React.FC = (props) => {
   const [state, setState] = useState('home');

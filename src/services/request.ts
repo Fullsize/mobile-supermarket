@@ -12,7 +12,7 @@ declare global {
 }
 const instance = axios.create({
   // baseURL: ENV.MODE === 'development' ? ENV['VITE_BASE_API']?.toString() : window['base_api'],
-  baseURL: ENV['VITE_BASE_API']?.toString(),
+  baseURL: ENV['VITE_BASE_API'],
   timeout: 15000,
   headers: {
     // '	Cache-Control': 'max-age=0',
