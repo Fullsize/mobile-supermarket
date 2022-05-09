@@ -1,12 +1,12 @@
 <!--
  * @Date: 2022-03-14 15:56:09
  * @LastEditors: Fullsize
- * @LastEditTime: 2022-03-21 16:56:34
+ * @LastEditTime: 2022-05-09 15:16:36
  * @FilePath: /mobile-supermarket/README.md
  * @Author: Fullsize
 -->
 # mobile 超市
-
+模仿京东超市
 ## 使用
 ```
   yarn
