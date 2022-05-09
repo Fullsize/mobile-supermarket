@@ -1,8 +1,8 @@
 /*
  * @Date: 2022-02-16 14:42:15
  * @LastEditors: Fullsize
- * @LastEditTime: 2022-03-21 16:29:23
- * @FilePath: /vite-react/vite.config.ts
+ * @LastEditTime: 2022-05-09 14:59:28
+ * @FilePath: /mobile-supermarket/vite.config.ts
  * @Author: Fullsize
  */
 import { defineConfig } from 'vite'
@@ -35,7 +35,7 @@ export default defineConfig({
   css: {
     postcss: {
       plugins: [require('postcss-px-to-viewport')({
-        viewportWidth: 320,
+        viewportWidth: 375,
         viewportUnit: 'vmin',
         minPixelValue:1,
         exclude:/node_modules/
